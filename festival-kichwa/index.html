@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival de Mujeres Adultas Mayores Kichwas Versiadoras</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+  </head>
+  <body class="bg-[#0f0f11] text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+    
+    <!-- Hero Section -->
+    <header class="relative w-full h-[90vh] flex flex-col justify-center items-center overflow-hidden">
+      <!-- Parallax Background Image -->
+      <div class="absolute inset-0 z-0">
+        <!-- Placeholder for actual hero image, we use an aesthetic dark gradient for now or a placeholder -->
+        <img 
+          src="https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=2000&auto=format&fit=crop" 
+          alt="Mujeres Kichwas en la Amazonía" 
+          class="w-full h-full object-cover opacity-40 mix-blend-overlay scale-105"
+          style="transform: translateZ(-1px) scale(1.5);"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f11] via-[#0f0f11]/60 to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
+        <span class="text-accent font-semibold tracking-widest uppercase text-sm mb-4 animate-fade-in-up" style="animation-delay: 0.1s;">IFAIC Presenta</span>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-tight mb-6 tracking-tight drop-shadow-2xl animate-fade-in-up" style="animation-delay: 0.2s;">
+          FESTIVAL DE MUJERES <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-orange-400">KICHWAS VERSIADORAS</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl font-light leading-relaxed animate-fade-in-up" style="animation-delay: 0.3s;">
+          Un encuentro para celebrar la memoria, la cultura y las voces ancestrales de las adultas mayores del Cantón Tena.
+        </p>
+        <a href="#noticias" class="mt-12 group flex items-center justify-center w-14 h-14 rounded-full border border-gray-600 hover:border-accent hover:bg-accent/10 transition-all duration-300 animate-bounce">
+          <svg class="w-6 h-6 text-white group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Asymmetric Grid Section -->
+    <main id="noticias" class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="mb-16 flex items-baseline justify-between border-b border-gray-800 pb-6">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-white">Últimas Novedades</h2>
+        <span class="text-sm text-gray-500 font-medium uppercase tracking-wider">Edición 2026</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+        
+        <!-- Noticia 4 (Featured - Spans multiple rows/cols) -->
+        <article class="group relative md:col-span-8 md:row-span-2 rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(229,57,53,0.3)] border border-gray-800/50 bg-gray-900" onclick="openModal('modal-noticia-4')">
+          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=1000&auto=format&fit=crop" loading="lazy" alt="Spots promocionales" class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand via-brand/40 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-8 w-full">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Promocional</span>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-display font-bold text-white mb-3 group-hover:text-accent transition-colors">Difusión de Spots Promocionales</h3>
+            <p class="text-gray-300 line-clamp-2 text-lg">Visualiza los dos videos promocionales oficiales del festival, diseñados para invitar a toda la comunidad a participar en este magno evento cultural.</p>
+          </div>
+        </article>
+
+        <!-- Noticia 9 -->
+        <article class="group relative md:col-span-4 md:row-span-1 rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-800/50 bg-gray-900" onclick="openModal('modal-noticia-9')">
+          <img src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Pasu Chibliam Mama" class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand via-brand/60 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Relato</span>
+            <h3 class="text-xl font-display font-bold text-white mb-2 leading-tight group-hover:text-accent transition-colors">Pasu Chibliam Mama</h3>
+            <p class="text-gray-400 line-clamp-2 text-sm">Escucha el poderoso relato de Ana Salazar, compartiendo la memoria viva de sus ancestros.</p>
+          </div>
+        </article>
+
+        <!-- Noticia 10 -->
+        <article class="group relative md:col-span-4 md:row-span-1 rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-800/50 bg-gray-900" onclick="openModal('modal-noticia-10')">
+          <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Mundo Puma" class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand via-brand/60 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Relato</span>
+            <h3 class="text-xl font-display font-bold text-white mb-2 leading-tight group-hover:text-accent transition-colors">Mundo Puma</h3>
+            <p class="text-gray-400 line-clamp-2 text-sm">Evelinda Huatatoca nos transporta a través de cantos tradicionales sobre la fuerza de la naturaleza.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- MODALS (Dialogs) -->
+    <!-- Noticia 4 Modal -->
+    <dialog id="modal-noticia-4" class="m-auto backdrop:bg-black/80 backdrop:backdrop-blur-md bg-transparent border-none p-0 w-full max-w-5xl overflow-visible transition-all opacity-0 open:opacity-100 duration-500">
+      <div class="bg-[#151518] rounded-3xl border border-gray-800 overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+        <button onclick="closeModal('modal-noticia-4')" class="absolute top-4 right-4 z-50 p-2 bg-black/50 hover:bg-accent rounded-full text-white transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="p-8 md:p-12 overflow-y-auto custom-scrollbar">
+          <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Difusión de Spots Promocionales</h2>
+          <p class="text-gray-400 text-lg mb-8">Disfruta de los avances oficiales del Festival, producidos en alta calidad para redes sociales y televisión local.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Video 1 -->
+            <div class="aspect-video bg-gray-900 rounded-2xl overflow-hidden relative group">
+              <!-- Reemplaza FILE_ID con el ID real de Google Drive -->
+              <iframe data-src="https://drive.google.com/file/d/FILE_ID_1/preview" class="w-full h-full border-0 lazy-iframe" loading="lazy" allow="autoplay"></iframe>
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span class="text-gray-500 font-medium">Spot 1 (ID Pendiente)</span>
+              </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="aspect-video bg-gray-900 rounded-2xl overflow-hidden relative group">
+              <!-- Reemplaza FILE_ID con el ID real de Google Drive -->
+              <iframe data-src="https://drive.google.com/file/d/FILE_ID_2/preview" class="w-full h-full border-0 lazy-iframe" loading="lazy" allow="autoplay"></iframe>
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span class="text-gray-500 font-medium">Spot 2 (ID Pendiente)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Noticia 9 Modal -->
+    <dialog id="modal-noticia-9" class="m-auto backdrop:bg-black/80 backdrop:backdrop-blur-md bg-transparent border-none p-0 w-full max-w-3xl overflow-visible transition-all opacity-0 open:opacity-100 duration-500">
+      <div class="bg-[#151518] rounded-3xl border border-gray-800 overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+        <button onclick="closeModal('modal-noticia-9')" class="absolute top-4 right-4 z-50 p-2 bg-black/50 hover:bg-accent rounded-full text-white transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="p-8 md:p-12 overflow-y-auto custom-scrollbar">
+          <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Pasu Chibliam Mama</h2>
+          <p class="text-accent font-medium mb-6">Relatado por Ana Salazar</p>
+          
+          <div class="aspect-video bg-gray-900 rounded-2xl overflow-hidden relative group mb-8">
+            <iframe data-src="https://drive.google.com/file/d/FILE_ID_ANA/preview" class="w-full h-full border-0 lazy-iframe" loading="lazy" allow="autoplay"></iframe>
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span class="text-gray-500 font-medium">Video (ID Pendiente)</span>
+              </div>
+          </div>
+          
+          <div class="prose prose-invert max-w-none text-gray-300">
+            <p>Ana Salazar nos relata la historia milenaria de "Pasu Chibliam Mama", una figura central en la cosmovisión Kichwa de la región del Tena. A través de este canto, se preserva el conocimiento sobre las plantas sagradas y el respeto por los espíritus de la selva.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Noticia 10 Modal -->
+    <dialog id="modal-noticia-10" class="m-auto backdrop:bg-black/80 backdrop:backdrop-blur-md bg-transparent border-none p-0 w-full max-w-3xl overflow-visible transition-all opacity-0 open:opacity-100 duration-500">
+      <div class="bg-[#151518] rounded-3xl border border-gray-800 overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+        <button onclick="closeModal('modal-noticia-10')" class="absolute top-4 right-4 z-50 p-2 bg-black/50 hover:bg-accent rounded-full text-white transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="p-8 md:p-12 overflow-y-auto custom-scrollbar">
+          <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Mundo Puma</h2>
+          <p class="text-accent font-medium mb-6">Relatado por Evelinda Huatatoca</p>
+          
+          <div class="aspect-video bg-gray-900 rounded-2xl overflow-hidden relative group mb-8">
+            <iframe data-src="https://drive.google.com/file/d/FILE_ID_EVELINDA/preview" class="w-full h-full border-0 lazy-iframe" loading="lazy" allow="autoplay"></iframe>
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span class="text-gray-500 font-medium">Video (ID Pendiente)</span>
+              </div>
+          </div>
+          
+          <div class="prose prose-invert max-w-none text-gray-300">
+            <p>En "Mundo Puma", Evelinda Huatatoca invoca la fortaleza del gran felino de la Amazonía. Un relato que mezcla el respeto por el depredador apex y su simbolismo como protector de los saberes profundos de la comunidad.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
