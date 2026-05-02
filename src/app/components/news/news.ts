@@ -9,6 +9,7 @@ interface Noticia {
   contenido: string;
   media: { type: 'image' | 'video', id: string }[];
   featured?: boolean;
+  alone?: boolean;
 }
 
 const NOTICIAS_DATA: Noticia[] = [
@@ -61,7 +62,9 @@ const NOTICIAS_DATA: Noticia[] = [
     media: [
       { type: 'video', id: '/noticia4.1.mp4' }
     ],
-    featured: true
+    featured: true,
+    alone: true
+
   },
   {
     id: '5',
@@ -71,7 +74,9 @@ const NOTICIAS_DATA: Noticia[] = [
     contenido: `En el marco del Festival “Mujeres Kichwas Versiadoras del Cantón Tena” 2026 (II Edición). La tercera semana de diciembre de 2025 Se llevó a cabo Proceso de calificación y selección de las mujeres kichwas versiadoras que participarán en la II Edición del Festival 2026. Las postulantes compartieron su arte en entrevistas personales y presentaciones orales en kichwa, expresando versos, cantos y relatos cargados de sabiduría, memoria y amor por su cultura. Las mujeres seleccionadas fueron: Grefa Rivadeneyra Cleidy; Grefa Andi Noemi Rosalina; Huatatoca Pauchi Celina Esther; Cerda Grefa Jazmín Rosa; Grefa Tapuy Graciela Noemi; Cefda Andy Rosa Leticia; Calapucha mamallacta Marina Martha; Andy Aguinda Rosa Mariela. Cada palabra fue una muestra viva de la tradición oral kichwa que este festival celebra y visibiliza.`,
     media: [
       { type: 'image', id: '/noticia5.png' }
-    ]
+    ],
+    alone: true
+
   },
   {
     id: '6',
@@ -94,8 +99,8 @@ const NOTICIAS_DATA: Noticia[] = [
     titulo: 'Talleres Formativos y Diálogo de Saberes',
     extracto: 'Procesos de formación dirigidos a grupos en situación de vulnerabilidad del Cantón Tena.',
     contenido: `En el marco de la II Edición del Festival 2025, se llevaron a cabo talleres formativos, procesos de diálogo de saberes y formación de públicos dirigidos a grupos en situación de vulnerabilidad del Cantón Tena, En la Comunidad Kichwa de alto Pano, Shandia, Venecia, Atacapi, en el Centro de atención integral Sumak Yanapak Wasi, Centro gerontológico del hospital del IESS, U.E. Bilingüe de De Chambira Tena, U. E. de Ongota y U.E. Bilingüe E. Ccecco del Pano. \n
-    👵🏽👶🏽👩🏽🦰 Las mujeres versiadoras seleccionadas lideraron estos espacios, compartiendo su conocimiento ancestral mediante la oralidad, poesía y actividades participativas, adaptadas al contexto y necesidades de cada grupo. \n
-    🎨 Se aplicaron técnicas pedagógicas lúdicas para niños, adultos mayores, personas con discapacidad y mujeres embarazadas, usando juegos orales, materiales visuales y dinámicas comunitarias que fortalecieron la comprensión y la participación activa. \n
+    Las mujeres versiadoras seleccionadas lideraron estos espacios, compartiendo su conocimiento ancestral mediante la oralidad, poesía y actividades participativas, adaptadas al contexto y necesidades de cada grupo. \n
+    Se aplicaron técnicas pedagógicas lúdicas para niños, adultos mayores, personas con discapacidad y mujeres embarazadas, usando juegos orales, materiales visuales y dinámicas comunitarias que fortalecieron la comprensión y la participación activa. \n
     🧶 Al finalizar cada encuentro, se entregaron materiales simbólicos como: tejidos con símbolos kichwas, adicional se entregaron certificados de participación como testimonio de este hermoso camino compartido.`,
     media: [
       { type: 'image', id: '/noticia7.1.jpg' },
@@ -127,7 +132,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌿 Un relato ancestral cargado de simbolismo, espiritualidad y conexión profunda con la naturaleza.`,
     media: [
       { type: 'video', id: '/noticia9.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '10',
@@ -139,7 +145,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌿 Es una metáfora poderosa sobre la transmisión de saberes ancestrales a hijas y nietas, mientras se contempla el florecer de los animales, las plantas y la vida que habita la selva.`,
     media: [
       { type: 'video', id: '/noticia10.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '11',
@@ -151,7 +158,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌊 De las faldas del cerro —también llamado Galeras— brota un río sagrado, símbolo de vida y advertencia. Evelinda nos recuerda: “Cuidado, el puma puede despertar”.`,
     media: [
       { type: 'video', id: '/noticia11.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '12',
@@ -163,7 +171,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌿 En la cosmovisión kichwa, la madre no solo es la dadora de vida, sino también el centro emocional y espiritual del hogar. Este canto no es solo un lamento, sino también un reconocimiento del vínculo sagrado, del cariño inmenso y de la solidaridad emocional que atraviesa generaciones.`,
     media: [
       { type: 'video', id: '/noticia12.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '13',
@@ -176,7 +185,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌿 En la tradición kichwa, la chicha no es solo bebida, sino un acto de amor, hospitalidad y conexión comunitaria.`,
     media: [
       { type: 'video', id: '/noticia13.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '14',
@@ -188,7 +198,8 @@ const NOTICIAS_DATA: Noticia[] = [
     💞 Marlene evoca un gesto íntimo y lleno de ternura: “Venga mi querido marido a tomar chicha… si te emborrachas, dormirás en mis piernas”. Es una declaración de cariño, fortaleza y hospitalidad que reafirma el rol esencial de la mujer en la vida familiar y comunitaria.`,
     media: [
       { type: 'video', id: '/noticia14.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '15',
@@ -200,7 +211,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌴 Lo vemos alimentándose de chonta amarilla, posado en el racimo, cantando “tururin, tururin” mientras observa con atención todo lo que lo rodea. Debajo del árbol, animales se alimentan y una hermosa mujer aparece como símbolo de fertilidad, vida y poder femenino.`,
     media: [
       { type: 'video', id: '/noticia15.mp4' }
-    ]
+    ],
+    alone: true
   },
   {
     id: '16',
@@ -212,7 +224,8 @@ const NOTICIAS_DATA: Noticia[] = [
     🌿 Con versos como “si llegan 9 meses, te escondes en la selva” o “yo te seguiré queriendo, solo cuando mueras te dejaré”, el canto expresa lealtad, resistencia y afecto incondicional.`,
     media: [
       { type: 'video', id: '/noticia16.mp4' }
-    ]
+    ],
+    alone: true
   }
 ];
 
@@ -276,7 +289,6 @@ const NOTICIAS_DATA: Noticia[] = [
             </div>
         </div>
 
-        <!-- Carousel with NO SCROLLBAR and AUTO-SCROLL -->
         <div id="news-carousel" 
              class="flex gap-8 overflow-x-auto no-scrollbar scroll-smooth pb-10"
              (mouseenter)="pauseAutoScroll()"
@@ -309,21 +321,23 @@ const NOTICIAS_DATA: Noticia[] = [
     <!-- MODALS -->
     <dialog *ngFor="let item of noticias" [id]="'modal-' + item.id" 
             class="m-auto backdrop:bg-amazon/80 backdrop:backdrop-blur-xl bg-transparent border-none p-0 w-[95%] max-w-6xl overflow-visible"
-            (click)="onBackdropClick($event, 'modal-' + item.id)">
+            (click)="onBackdropClick($event, 'modal-' + item.id)"
+            (close)="onDialogClose('modal-' + item.id)">
       
       <div class="bg-white rounded-[3rem] overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+        <!-- Close Button -->
         <button (click)="closeModal('modal-' + item.id)" class="absolute top-6 right-6 md:top-8 md:right-8 z-50 p-3 bg-white/80 backdrop-blur-sm hover:bg-terracotta hover:text-white rounded-full text-amazon shadow-lg transition-all">
           <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
 
-        <div class="flex flex-col md:flex-row h-full overflow-hidden">
+        <!-- LAYOUT NORMAL (SIDE BY SIDE) -->
+        <div *ngIf="!item.alone" class="flex flex-col md:flex-row h-full overflow-hidden">
             <div class="w-full md:w-1/2 bg-amazon/5 flex flex-col p-6 md:p-10 relative overflow-hidden">
                 <div *ngIf="item.media.length > 2" class="absolute top-4 left-1/2 -translate-x-1/2 z-20">
                     <button (click)="scrollMedia('v-carousel-' + item.id, -1)" class="p-2 bg-white rounded-full shadow-md text-amazon hover:bg-terracotta hover:text-white transition-all">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
                     </button>
                 </div>
-                
                 <div [id]="'v-carousel-' + item.id" class="flex-1 overflow-y-auto no-scrollbar scroll-smooth space-y-6 md:space-y-8 pr-2">
                     <ng-container *ngFor="let m of item.media">
                         <div *ngIf="m.type === 'video'" class="rounded-[2rem] overflow-hidden relative shadow-lg bg-charcoal aspect-video">
@@ -334,14 +348,12 @@ const NOTICIAS_DATA: Noticia[] = [
                         </div>
                     </ng-container>
                 </div>
-
                 <div *ngIf="item.media.length > 2" class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
                     <button (click)="scrollMedia('v-carousel-' + item.id, 1)" class="p-2 bg-white rounded-full shadow-md text-amazon hover:bg-terracotta hover:text-white transition-all">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                 </div>
             </div>
-
             <div class="p-8 md:p-16 lg:p-20 overflow-y-auto custom-scrollbar flex-1 bg-white">
               <span class="text-terracotta font-bold uppercase tracking-widest text-[10px] mb-4 block">{{item.tag}}</span>
               <h2 class="text-lg md:text-3xl font-display font-bold text-amazon mb-8 md:mb-10 leading-tight">{{item.titulo}}</h2>
@@ -350,17 +362,42 @@ const NOTICIAS_DATA: Noticia[] = [
               </div>
             </div>
         </div>
+
+        <!-- LAYOUT ALONE (TOP MEDIA/TITLE, BOTTOM TEXT) -->
+        <div *ngIf="item.alone" class="flex flex-col h-full overflow-y-auto custom-scrollbar">
+            <!-- Row 1: Media and Title -->
+            <div class="flex flex-col md:flex-row gap-10 p-8 md:p-16 pb-0">
+                <!-- Media Box -->
+                <div class="w-full md:w-1/2">
+                    <div class="rounded-[3rem] overflow-hidden shadow-2xl bg-amazon/5 aspect-video md:aspect-square lg:aspect-video relative">
+                        <ng-container [ngSwitch]="item.media[0].type">
+                            <img *ngSwitchCase="'image'" [src]="item.media[0].id" class="w-full h-full object-cover">
+                            <video *ngSwitchCase="'video'" [src]="item.media[0].id" class="w-full h-full object-cover" autoplay muted loop playsinline controls [muted]="true"></video>
+                        </ng-container>
+                    </div>
+                </div>
+                <!-- Title Box -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center">
+                    <span class="text-terracotta font-bold uppercase tracking-widest text-[10px] mb-4 block">{{item.tag}}</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-amazon leading-tight">{{item.titulo}}</h2>
+                    <p class="mt-6 text-gray-400 font-medium italic border-l-4 border-terracotta pl-6">{{item.extracto}}</p>
+                </div>
+            </div>
+            <!-- Row 2: Full Content -->
+            <div class="p-8 md:p-16 pt-10">
+                <div class="prose prose-slate max-w-none text-gray-600 text-base md:text-xl font-light leading-relaxed">
+                    <div class="whitespace-pre-line bg-gray-50/50 p-8 md:p-12 rounded-[2rem] border border-gray-100 shadow-inner">
+                        {{item.contenido}}
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     </dialog>
   `,
   styles: [`
-    /* Clean scrollbar removal */
     .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { 
-      -ms-overflow-style: none; 
-      scrollbar-width: none; 
-      scrollbar-color: transparent transparent;
-    }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     .reveal-header { transition: all 1s ease-out; opacity: 0; transform: translateY(20px); }
     .reveal-header.visible { opacity: 1; transform: translateY(0); }
   `]
@@ -396,8 +433,6 @@ export class NewsComponent implements OnInit, AfterViewInit, OnDestroy {
     }, { threshold: 0.2 });
 
     document.querySelectorAll('.reveal-header').forEach(h => headerObserver.observe(h));
-    
-    // START AUTO SCROLL
     this.startAutoScroll();
   }
 
@@ -416,13 +451,11 @@ export class NewsComponent implements OnInit, AfterViewInit, OnDestroy {
           container.scrollBy({ left: 350, behavior: 'smooth' });
         }
       }
-    }, 4000); // Every 4 seconds
+    }, 4000);
   }
 
   pauseAutoScroll() {
-    if (this.autoScrollInterval) {
-      clearInterval(this.autoScrollInterval);
-    }
+    if (this.autoScrollInterval) clearInterval(this.autoScrollInterval);
   }
 
   scrollCarousel(direction: number) {
@@ -455,7 +488,13 @@ export class NewsComponent implements OnInit, AfterViewInit, OnDestroy {
     const dialog = document.getElementById(modalId) as HTMLDialogElement;
     if (dialog) {
       dialog.close();
-      document.body.style.overflow = '';
+    }
+  }
+
+  onDialogClose(modalId: string) {
+    document.body.style.overflow = '';
+    const dialog = document.getElementById(modalId) as HTMLDialogElement;
+    if (dialog) {
       const videos = dialog.querySelectorAll('video');
       videos.forEach(v => {
         v.pause();

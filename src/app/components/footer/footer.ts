@@ -23,10 +23,10 @@ import { CommonModule } from '@angular/common';
               Revitalizando la oralidad, las lenguas y los saberes ancestrales de las comunidades kichwas del Cantón Tena.
             </p>
             <div class="flex gap-4">
-              <a href="https://www.facebook.com/share/14bnpaLg1as/" class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all">
+              <a href="https://www.instagram.com/verseadoras_kichwas?igsh=Z29rc2Z0OGcxZXpv" target="_blank" class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all">
                 <i class="pi pi-instagram text-sm md:text-base"></i>
               </a>
-              <a href="https://www.facebook.com/share/14bnpaLg1as/" class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all">
+              <a href="https://www.facebook.com/share/14bnpaLg1as/" target="_blank" class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all">
                 <i class="pi pi-facebook text-sm md:text-base"></i>
               </a>
               <!-- <a href="#" class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all">
