@@ -34,6 +34,7 @@ import { CommonModule } from '@angular/common';
         </div>
       </section>
 
+      
       <!-- ABOUT PART (Esencia) -->
       <section id="about" class="relative py-24 md:py-40 lg:py-60 bg-white min-h-[80vh] flex flex-col lg:flex-row items-center overflow-hidden">
         
@@ -148,13 +149,13 @@ export class LandingComponent implements OnInit {
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
     const sectionAbout = document.getElementById('about');
-    
+
     this.isDesktop = viewportWidth >= 1024;
     this.progress = Math.max(0, Math.min(1, scrollY / (viewportHeight * 0.8)));
 
     if (sectionAbout) {
       const aboutRect = sectionAbout.getBoundingClientRect();
-      
+
       // RESTORE SMOOTH LOGIC FOR DESKTOP
       if (this.isDesktop) {
         const aboutMiddle = aboutRect.top + (aboutRect.height / 2);
@@ -167,7 +168,7 @@ export class LandingComponent implements OnInit {
 
     let baseSize = this.isDesktop ? 5 : 2.2;
     let endSize = this.isDesktop ? 3.5 : 2.2;
-    
+
     if (!this.isPinned) {
       const size = baseSize - (this.progress * (baseSize - endSize));
       this.titleFontSize = `${size}rem`;
