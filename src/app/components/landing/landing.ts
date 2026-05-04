@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
           <div class="absolute inset-0 bg-gradient-to-b from-amazon/40 via-amazon/20 to-white"></div>
         </div>
 
-        <div class="relative z-10 text-center flex flex-col items-center w-full px-6 transition-opacity duration-500 top-10 md:top-auto" [style.opacity]="1 - progress * 2">
+        <div class="relative z-10 text-center flex flex-col items-center w-full px-6 transition-opacity duration-500 top-14 md:top-auto" [style.opacity]="1 - progress * 2">
           <div class="h-40 md:h-56 lg:h-72"></div>
           <p class="text-amazon font-sans font-medium text-base md:text-xl lg:text-2xl max-w-2xl mt-6 md:mt-10 animate-fade-in-up drop-shadow-sm" style="animation-delay: 0.4s;">
             <span class="px-3 py-1 md:px-4 md:py-1 bg-white/60 backdrop-blur-sm rounded-lg block md:inline text-center md:text-left">
