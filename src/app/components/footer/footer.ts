@@ -15,7 +15,8 @@ import { CommonModule } from '@angular/common';
           <!-- Column 1: Branding -->
           <div class="md:col-span-4 space-y-6 md:space-y-8">
             <div class="flex items-center gap-4 md:gap-6">
-               <span class="text-2xl md:text-3xl font-display font-black text-white tracking-tighter uppercase">Kichwa <br/> Festival</span>
+               <!-- <span class="text-2xl md:text-3xl font-display font-black text-white tracking-tighter uppercase">Kichwa <br/> Festival</span> -->
+               <img src="/Recurso3.svg" alt="Logo" class="h-12">
                <div class="h-10 md:h-12 w-px bg-white/20"></div>
                <span class="text-[10px] font-bold tracking-widest text-white/40 uppercase">IFAIC <br/> 2026</span>
             </div>

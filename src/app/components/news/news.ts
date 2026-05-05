@@ -290,7 +290,7 @@ const NOTICIAS_DATA: Noticia[] = [
         </div>
 
         <div id="news-carousel" 
-             class="flex gap-8 overflow-x-auto no-scrollbar scroll-smooth pb-10"
+             class="flex gap-8 overflow-x-auto overflow-y-hidden no-scrollbar scroll-smooth pb-10"
              (mouseenter)="pauseAutoScroll()"
              (mouseleave)="startAutoScroll()">
           <div *ngFor="let item of noticiasSecundarias" 
@@ -398,6 +398,7 @@ const NOTICIAS_DATA: Noticia[] = [
   styles: [`
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    #news-carousel { touch-action: pan-y; }
     .reveal-header { transition: all 1s ease-out; opacity: 0; transform: translateY(20px); }
     .reveal-header.visible { opacity: 1; transform: translateY(0); }
   `]

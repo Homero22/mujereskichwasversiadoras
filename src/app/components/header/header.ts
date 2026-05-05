@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
     <nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
       <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="text-amazon font-display font-black text-lg md:text-xl tracking-tighter uppercase">Kichwa Festival</span>
+          <!-- <span class="text-amazon font-display font-black text-lg md:text-xl tracking-tighter uppercase">Kichwa Festival</span> -->
+          <img src="/Recurso8.svg" alt="Logo" class="h-12">
         </div>
         
         <!-- Desktop Menu -->
